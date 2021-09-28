@@ -4,10 +4,8 @@
 int main() {
     setlocale(LC_ALL, "ru");
     fs::path path;
-    cout << "Введите путь до директории:" << endl;
+    cout << "Р’РІРµРґРёС‚Рµ РїСѓС‚СЊ Рє РґРёСЂРµРєС‚РѕСЂРёРё:" << endl;
     wcin >> path;
     Files files(path);
     files.moveFiles();
 }
-
-// K:/Projects/ЯП/Аудиторные/3/test

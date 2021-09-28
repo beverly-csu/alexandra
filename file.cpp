@@ -47,7 +47,7 @@ Files::Files(fs::path p) {
 }
 
 void Files::createDir() {
-	fs::path p = path.string() + "/Директория " + to_string(dirIterator);
+	fs::path p = path.string() + "/Р”РёСЂРµРєС‚РѕСЂРёСЏ " + to_string(dirIterator);
 	fs::create_directory(p);
 	++dirIterator;
 }
@@ -58,7 +58,7 @@ void Files::moveFile(fs::path oldPath, fs::path newPath) {
 
 void Files::moveFiles() {	
 	for (int i = 0; i < files.size(); ++i) {
-		fs::path pathDir = path.string() + "/Директория " + to_string(dirIterator) + "/";
+		fs::path pathDir = path.string() + "/Р”РёСЂРµРєС‚РѕСЂРёСЏ " + to_string(dirIterator) + "/";
 		fs::path dopPath = pathDir.string() + files[i].path.filename().string();
 		if (files[i].size >= 100) {
 			createDir();
